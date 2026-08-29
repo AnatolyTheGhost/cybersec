@@ -1,0 +1,15 @@
+[project]
+name = "mutations-receiver"
+version = "0.1.0"
+description = "Initial mutations receiver with extensible adapter architecture"
+requires-python = ">=3.9"
+dependencies = [
+    "watchdog",
+    "blake3",
+]
+
+[project.scripts]
+cybersec = "receiver.engine_receiver.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
